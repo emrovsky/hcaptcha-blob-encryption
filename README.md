@@ -21,6 +21,11 @@ A sandbox solution for encrypting hCaptcha fingerprint blobs with moderate perfo
 
 hCaptcha creates browser fingerprints through its JavaScript code. These fingerprints need to be encrypted for use with hCaptcha's services. This project provides a lightweight sandbox environment to perform this encryption.
 
+## Thanks
+Thanks to epicmatthew23 for decrypting and confirming that the solution works <3
+![ty](https://github.com/user-attachments/assets/174fab6c-13ab-4c6d-9cf6-0347ff1311c4)
+
+
 ## Why This Tool?
 
 - **Moderate Performance**: Encryption takes around 750ms
