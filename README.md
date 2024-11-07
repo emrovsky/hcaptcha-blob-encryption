@@ -15,6 +15,7 @@ A sandbox solution for encrypting hCaptcha fingerprint blobs with moderate perfo
 > Fun fact: I HATE JSDOM
 > 
 > fun fact: I used Python for the API because the Node.js encryption can't run multiple times without errors (and I was too lazy to fix that 😅)
+> if you can see and execute a js code, it means you can sandbox it hehe
 
 ## Overview
 
