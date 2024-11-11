@@ -28,7 +28,7 @@ hCaptcha creates browser fingerprints through its JavaScript code. These fingerp
 ## Why This Tool?
 
 - **Moderate Performance**: Parsing takes around 300 ms
-- **Version Caching**: Since hCaptcha has a limited HSW version pool, you can save version-specific sandboxes (e.g., `version_sandbox.js`) for improved processing
+- **Version Caching**: Since hCaptcha has a limited HSW version pool, you can save version-specific sandboxes (e.g., `version_sandbox.js`) for improved processing / I made it myself and added to repo, cuz no one understand the idea
 - **Simple Implementation**: Straightforward approach to fingerprint encryption
 
 ## Features
