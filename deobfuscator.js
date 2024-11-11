@@ -241,7 +241,11 @@ function encrypt(version_number, blob_array) {
   originalScript = originalScript.trim().split('\n');
   originalScript.pop(); // Removes the last line
   originalScript = originalScript.join('\n');
+  writeCodeToFile(`output/${version_number}_sandbox.js`, originalScript);
 
+  // while using the sandbox enviroment, get all functions via regex and get the latest function name
+  // then call the function with the blob array from the language that u used to get the blob array
+  // thats it..
   
 
   originalScript += `
@@ -253,7 +257,7 @@ function encrypt(version_number, blob_array) {
 
   vm.runInContext(originalScript, context);
   encrypted_value = vm.runInContext("encrypt()", context);
-
+  
 
   resolve(encrypted_value);
 }
@@ -261,13 +265,12 @@ function encrypt(version_number, blob_array) {
   )};
 
 
-  function writeCodeToFile(code) {
-    let outputPath = "output.js";
+  function writeCodeToFile(outputPath, code) {
     writeFile(outputPath, code, (err) => {
       if (err) {
-        console.log("Error writing file", err);
+        //console.log("Error writing file", err);
       } else {
-        console.log(`Wrote file to ${outputPath}`);
+        //console.log(`Wrote file to ${outputPath}`);
       }
     });
   }
